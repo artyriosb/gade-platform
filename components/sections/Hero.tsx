@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button";
+import { Button } from "../ui";
 
 export default function Hero() {
     return (
@@ -30,11 +30,11 @@ export default function Hero() {
                 </div>
 
                 <div className="flex max-w-max mt-6 gap-10 items-center justify-center">
-                    <Button variant="outline" size="large">
+                    <Button variant="outline" size="lg">
                         Conheça a Igreja
                     </Button>
 
-                    <Button variant="primary" size="large">
+                    <Button variant="primary" size="lg">
                         Pedidos de Oração
                     </Button>
                 </div>
