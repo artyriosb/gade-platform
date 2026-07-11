@@ -1,4 +1,4 @@
-import { Button } from "../ui";
+import { Button, Card, Container } from "../ui";
 
 export default function Hero() {
     return (
@@ -38,6 +38,19 @@ export default function Hero() {
                         Pedidos de Oração
                     </Button>
                 </div>
+                <Container className="flex items-center">
+                    <Card>
+                        <h2 className="mb-4 text-3xl font-bold leading-tight">
+                            Próximos Eventos
+                        </h2>
+                    </Card>
+
+                    <Card>
+                        <h2 className="mb-4 text-3xl font-bold leading-tight">
+                            Últimas Notícias
+                        </h2>
+                    </Card>
+                </Container>
             </main>
     );
 }

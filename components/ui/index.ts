@@ -1,2 +1,3 @@
 export { default as Button } from "./Button";
-export { default as Conteiner } from "./Conteiner";
+export { default as Container } from "./Container";
+export { default as Card } from "./Card";
