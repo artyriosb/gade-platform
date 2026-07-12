@@ -1,32 +1,20 @@
+import Link from "next/link";
 import Logo from "./Logo";
+import { NavBar } from "../navigation";
 
 export default function Header() {
     return (
-        <header className="w-full border-b border-white/10 bg-gade-black">
-            <div className="mx-auto flex max-w7xl items-center justify-between px-6 py-5">
+        <header className="w-full border-b border-gade-white/10 bg-gade-black">
+            <div className="mx-auto flex max-w7=xl items-center justify-between px-10 py-5">
                 <Logo />
-
-                <nav className="hidden gap-8 text-sm text-gade-gray md:flex">
-                    <a href="#" className="transition hover:text-gade-gold">
-                        Inicio
-                    </a>
-
-                    <a href="#" className="transition hover:text-gade-gold">
-                        Sobre
-                    </a>
-
-                    <a href="#" className="transition hover:text-gade-gold">
-                        Ministérios
-                    </a>
-
-                    <a href="#" className="transition hover:text-gade-gold">
-                        Notícias
-                    </a>
-
-                    <a href="#" className="transition hover:text-gade-gold">
-                        Contato
-                    </a>
-                </nav>
+                    <NavBar>
+                        <Link href="#" className="transition hover:text-gade-gold">Inicio</Link>
+                        <Link href="#" className="transition hover:text-gade-gold">Sobre</Link>
+                        <Link href="#" className="transition hover:text-gade-gold">Ministérios</Link>
+                        <Link href="#" className="transition hover:text-gade-gold">Notícias</Link>
+                        <Link href="#" className="transition hover:text-gade-gold">Contato</Link>
+                    </NavBar>
+                
             </div>
         </header>
     );
