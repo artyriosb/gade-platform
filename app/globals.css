@@ -2,29 +2,27 @@
 
 :root {
   /* Brand Colors */
-  --gade-black: #050505;
-  --gade-gold: #d4af37;
-  --gade-gold-light: #e7c873;
-  --gade-white: #fafafa;
-  --gade-gray: #a1a1aa;
+  --brand-primary: #d4af37;
+  --brand-secondary: #a1a1aa;
+  --brand-accent: #050505;
+  --brand-inverse: #fafafa;
+  --brand-primary-light: #e7c873;
 
   /* Theme */
-  --background: var(--gade-black);
-  --foreground: var(--gade-white);
+  --background: var(--brand-accent);
+  --foreground: var(--brand-inverse);
 }
 
-@theme inline {
+@theme {
+  --color-primary: var(--brand-primary);
+  --color-secondary: var(--brand-secondary);
+  --color-accent: var(--brand-accent);
+  --color-inverse: var(--brand-inverse);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-gade-black: var(--gade-black);
-  --color-gade-gold: var(--gade-gold);
-  --color-gade-gold-light: var(--gade-gold-light);
-  --color-gade-white: var(--gade-white);
-  --color-gade-gray: var(--gade-gray);
-
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 * {
@@ -38,5 +36,5 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-jetBrain-mono), sans-serif;
 }

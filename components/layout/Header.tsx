@@ -1,18 +1,34 @@
-import Link from "next/link";
 import Logo from "./Logo";
 import { NavBar } from "../navigation";
+import { NavLink } from "../navigation"
 
 export default function Header() {
     return (
-        <header className="w-full border-b border-gade-white/10 bg-gade-black">
+        <header className="w-full border-b border-brand-inverse/10 bg-brand-accent">
             <div className="mx-auto flex max-w7=xl items-center justify-between px-10 py-5">
                 <Logo />
                     <NavBar>
-                        <Link href="#" className="transition hover:text-gade-gold">Inicio</Link>
-                        <Link href="#" className="transition hover:text-gade-gold">Sobre</Link>
-                        <Link href="#" className="transition hover:text-gade-gold">Ministérios</Link>
-                        <Link href="#" className="transition hover:text-gade-gold">Notícias</Link>
-                        <Link href="#" className="transition hover:text-gade-gold">Contato</Link>
+                        
+                        <NavLink href="/inicio">
+                            Início
+                        </NavLink>
+
+                        <NavLink href="/ministries">
+                            Ministérios
+                        </NavLink>
+
+                        <NavLink href="/news">
+                            Notícias
+                        </NavLink>
+
+                        <NavLink href="/about">
+                            Sobre
+                        </NavLink>
+
+                        <NavLink href="/contact">
+                            Contato
+                        </NavLink>
+        
                     </NavBar>
                 
             </div>

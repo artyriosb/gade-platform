@@ -2,17 +2,17 @@ import { Button, Card, Container } from "../ui";
 
 export default function Hero() {
     return (
-                    <main className="flex flex-col min-h-screen items-center justify-center bg-gade-black px-6 text-gade-white">
+                    <main className="flex flex-col min-h-screen items-center justify-center bg-background px-6 text-inverse">
                 <div className="max-w-3xl text-center">
 
                     <div className="mb-8 flex items-center justify-center gap-4">
-                        <div className="h-px w-12 bg-gade-gold"></div>
+                        <div className="h-px w-12 bg-primary"></div>
 
-                            <p className="uppercase tracking-[0.4em] text-gade-gold text-sm">
+                            <p className="uppercase tracking-[0.4em] text-primary text-sm">
                             Igreja Missão Gade
                             </p>
 
-                        <div className="h-px w-12 bg-gade-gold"></div>
+                        <div className="h-px w-12 bg-primary"></div>
                     </div>
 
                   <h1 className="mb-6 text-5xl font-bold leading-tight">
@@ -22,7 +22,7 @@ export default function Hero() {
                     <br />e manifestando o poder do Espírito Santo.
                   </h1>
 
-                  <p className="text-lg text-gade-gray">
+                  <p className="text-lg text-secondary">
                     Seja bem-vindo ao site oficial da Igreja Missão Gade.
                     Em breve você poderá acompanhar nossos cultos,
                     eventos, ministérios e projetos missionários. 
