@@ -5,7 +5,7 @@ import { NavLink } from "../navigation"
 export default function Header() {
     return (
         <header className="w-full border-b border-brand-inverse/10 bg-brand-accent">
-            <div className="mx-auto flex max-w7=xl items-center justify-between px-10 py-5">
+            <div className="mx-10 flex max-w7=xl items-center justify-between px-10 py-5">
                 <Logo />
                     <NavBar>
                         
