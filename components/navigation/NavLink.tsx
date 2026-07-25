@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ComponentProps } from "react";
-import { cva } from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const navLinkVariants = cva(
@@ -9,7 +9,7 @@ const navLinkVariants = cva(
     variants: {
       variant: {
         navigation: "hover:text-primary",
-        footer: "text-secondary hover:text-inverse",
+        footer: "text-inverse hover:text-primary",
         article: "underline hover:text-primary",
       },
     },
@@ -19,24 +19,26 @@ const navLinkVariants = cva(
   }
 );
 
-type NavLinkProps = ComponentProps<typeof Link>;
+type NavLinkProps = ComponentProps<typeof Link> &
+    VariantProps<typeof navLinkVariants>;
 
 export default function NavLink ({
     children,
     href,
     className,
+    variant,
     ...props
 }: NavLinkProps) {
     return (
         <Link
             href={href}
             className={cn(
-                navLinkVariants(),
+                navLinkVariants({ variant }),
                 className
             )}
-                {...props}
-            >
-                {children}
+            {...props}
+        >
+            {children}
         </Link>
     )
 }
