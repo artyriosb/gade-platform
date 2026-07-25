@@ -8,10 +8,16 @@
   --brand-inverse: #fafafa;
   --brand-primary-light: #e7c873;
 
+  /*Accent Color*/
+
+  --success: #22c55e;
+  --danger: #dc2626;
+  --attention: #ea580c;
+
   /* Theme */
   --background: var(--brand-accent);
   --foreground: var(--brand-inverse);
-}
+};
 
 @theme {
   --color-primary: var(--brand-primary);
@@ -19,6 +25,10 @@
   --color-accent: var(--brand-accent);
   --color-inverse: var(--brand-inverse);
   --color-hover: var(--brand-primary-light);
+
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-attention: var(--attention);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -38,4 +48,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-jetBrain-mono), sans-serif;
+}
+
+.button-radial {
+    background: 
+      radial-gradient(
+        circle,
+        rgba(212,175,55,.35) 0%,
+        rgba(212,175,55,.15) 35%,
+        transparent 70%
+      );
 }
