@@ -7,7 +7,7 @@ type ContainerProps = {
 };
 
 const containerVariants = cva(
-    "mx-auto w-full max-w-7xl px-6"
+    "mx-auto w-full px-6"
 );
 
 export default function Container({ 
